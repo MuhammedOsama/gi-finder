@@ -1,0 +1,61 @@
+@import "../../../variables";
+
+.search-icon
+{
+    text-align: center;
+
+    input
+    {
+        height: 50px;
+        width: 700px;
+        padding-left: 15px;
+        color: $mainColor;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid $borderColor;
+        border-right: none;
+        outline: none;
+
+        @media (max-width: 800px) {
+            width: 600px;
+        }
+
+        @media (max-width: 414px) {
+            width: 280px;
+        }
+    }
+
+    .icon
+    {
+        height: 100%;
+        width: 100px;
+        padding: 4.9px 0 3px 0;
+        line-height: 40px;
+        text-align: center;
+        background: $textColor;
+        border: 1px solid $borderColor;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        @media (min-width: 1920px) {
+            padding: 4px 0 4px 0;
+        }
+
+        @media (max-width: 1280px) {
+            padding: 4px 0 4px 0;
+        }
+
+        @media (max-width: 414px) {
+            width: 50px;
+        }
+
+        &:hover {
+            background: $hoverColor;
+        }
+
+        span {
+            color: $mainColor;
+            font-size: 18px;
+        }
+    }
+}
